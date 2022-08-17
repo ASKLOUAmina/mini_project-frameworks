@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project frameworks</title>
+  <link href="https://unpkg.com/sanitize.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+  <section id="projects" class="projects">
+    <h2 class="projects__title">les frameworks javascripts</h2>
+    <section id="frameworks" class="frameworks">
+      <div class="framework">
+        <h3 class="framework__title">framework Angular </h3>
+        <img class="framework__img" src="assets/images/angular.png" alt="image d'illustration de mon projet javascript">
+        <p class="framework__text">Angular est un framework côté client, open source, basé sur TypeScript, et codirigé par l'équipe du projet « Angular » 
+          à Google et par une communauté de particuliers et de sociétés.</p>
+      </div>
+      <div class="framework">
+        <h3 class="framework__title">framework React</h3>
+        <img class="framework__img" src="assets/images/react.png" alt="image d'illustration de mon projet react">
+        <p class="framework__text">React est une bibliothèque JavaScript libre développée par Facebook depuis 2013. Le but principal de
+           cette bibliothèque est de faciliter la création d'application web monopage.</p>
+      </div>
+      <div class="framework">
+        <h3 class="framework__title">Framework Node</h3>
+        <img class="framework__img" src="assets/images/node.png" alt="image d'illustration de mon projet node">
+        <p class="framework__text">Node.js est une plateforme logicielle libre en JavaScript, orientée vers les applications réseau évènementielles
+           hautement concurrentes qui doivent pouvoir monter en charge..</p>
+      </div>
+    </section>
+  </section>
+
+  <section id="new-project" class="new-project">
+    <h2 class="new-project__title">Ajouter un framework</h2>
+    <form id="new-project-form" class="new-project-form" onsubmit="handleSubmit(event)">
+      <div class="new-project-form__input-group">
+        <label for="project-title">Titre du framework</label>
+        <input type="text" name="project-title" id="project-title">
+      </div>
+      <div class="new-project-form__input-group">
+        <label for="project-img-link">Lien vers une image en ligne</label>
+        <input type="text" name="project-img-link" id="project-img-link">
+      </div>
+      <div class="new-project-form__input-group new-project-form__input-group--textarea">
+        <label for="project-text">Description du framework</label>
+        <textarea name="project-text" id="project-text" rows="10"></textarea>
+      </div>
+      <button class="new-project__button" type="submit">Créer framework</button>
+    </form>
+  </section>
+
+  <script src="./index.js"></script>
+</body>
+
+</html>
